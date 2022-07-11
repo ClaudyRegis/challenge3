@@ -2,11 +2,14 @@
 var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
 
-// to declare the variables
+// function to declare the variables
 var randomLowercase = ["abcdefghijklmnopqrstuvwxyz"];
 var randomUppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 var randomNumeric = ["0123456789"];
 var randomSpecialCharacters = ["@#$%^&*()+<>/="];
+var randomPassword =
+  randomLowercase + randomUppercase + randomNumeric + randomSpecialCharacters;
+
 
 //Function used to determine the length of the password
 function Input() {
