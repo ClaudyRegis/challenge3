@@ -15,7 +15,7 @@ var randomPassword =
 function Input() {
   userDecision = [""];
 
-  var numChar = window.prompt (prompt("How many characters would you like you password to have?", "8-128"));
+  var numChar = window.prompt (prompt("Please create your password, requires 8-128 characters", ""));
      if (numChar < 8 || numChar > 128) {
       alert("Please select the valid number of characters");
       return;
@@ -27,11 +27,11 @@ function Input() {
       return;
     }
  
-  var lowerCasePass = window.confirm("Would you like to include lower case letters?");
+     //function to add uppercase numeric special  characters
+  var lowerCasePass = window.confirm (prompt("Would you like to include lower case letters?", ""));
   if (lowerCasePass === true) {
     options = options.concat(lowerCase);
   }
-  //function to add uppercase numeric special  characters
 var upperCasePass = window.confirm("Would you like to include upper case letters?");
   if (upperCasePass === true) {
     options = options.concat(upperCase);
